@@ -1,17 +1,13 @@
-## Hi there 👋
+# Hi there 👋 I'm Pranav
 
-this is a landing page 
-<!--
-**pranavkumaarofficial/pranavkumaarofficial** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I’m a developer who loves building **production-ready products** that solve real problems.  
+Always learning, improving, and experimenting with new ideas.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 About Me
+- 💼 I’ve built and shipped several **production-grade applications**
+- 💡 I enjoy creating tools that are **useful, efficient, and scalable**
+- 🌱 Constantly exploring new technologies and improving my craft
+- 💬 Ask me about software design, startups, or anything tech
+- ⚡ Fun fact: I think clean code and good coffee go hand in hand ☕
