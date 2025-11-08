@@ -1,6 +1,6 @@
 # Hey, I'm Pranav 👋
 
-🚀 **Python Developer | Big Data + LLM Engineer | Professional Vibecoder**
+🚀 **Python Developer | Big Data + LLM Engineer | LLMOps**
 
 I'm a Python developer working at the intersection of **LLMs**, **LangGraph**, and **vector retrieval** — I build tools that make complex systems feel intuitive.  
 Currently exploring **local inference, retrieval pipelines, and meta APIs** for smarter, faster AI assistants.
@@ -44,7 +44,7 @@ Currently exploring **local inference, retrieval pipelines, and meta APIs** for 
 ---
 
 ### 🧩 Fun Stuff
-> 🧘‍♂️ “Professional vibecoder.” I build, break, fix, and build again — usually past midnight.  
+> 🧘‍♂️ “Professional coder + vibecoder.” I build, break, fix, and build again — usually past midnight.  
 > Currently vibing with local LLMs + retrieval pipelines.
 
 📫 **Reach out:**  
