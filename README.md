@@ -144,7 +144,7 @@ FastAPI · Python · TypeScript · OAuth2 · PKI · HL7 / FHIR interoperability
 
 <div align="center">
 
-### Connect
+### 📫 Connect
 
 [Portfolio](https://pranavkumaarofficial.github.io) ·
 [LinkedIn](https://linkedin.com/in/pranavkumaarofficial) ·
