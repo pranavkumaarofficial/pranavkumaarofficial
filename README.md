@@ -5,14 +5,14 @@
 
 <table>
 <tr>
-<td align="center"><b>Multi-Agent LLM Systems</b></td>
-<td align="center"><b>Retrieval-Augmented Generation</b></td>
-<td align="center"><b>Local & Cost-Aware Inference</b></td>
-<td align="center"><b>Production ML Infrastructure</b></td>
+<td align="center">Multi-Agent LLM Systems</td>
+<td align="center">Retrieval-Augmented Generation</td>
+<td align="center">Local & Cost-Aware Inference</td>
+<td align="center">Production ML Infrastructure</td>
 </tr>
 </table>
 
-Software Engineer focused on building <b>production-grade AI systems</b> — combining multi-agent LLM architectures, retrieval pipelines, and cost-aware inference under real-world constraints.
+I am a software engineer who builds **production-grade AI systems** — focusing on how models, data, and infrastructure behave under real-world constraints such as latency, cost, scale, and reliability.
 
 [Portfolio](https://pranavkumaarofficial.github.io) ·
 [LinkedIn](https://linkedin.com/in/pranavkumaarofficial) ·
@@ -22,12 +22,12 @@ Software Engineer focused on building <b>production-grade AI systems</b> — com
 
 ---
 
-## 🔬 Research & Publications
+## Research & Publications
 
 <table>
 <tr>
-<td width="25%"><b>ICMLC 2026</b></td>
-<td width="75%">
+<td width="22%"><b>ICMLC 2026</b></td>
+<td width="78%">
 <b>When Graph Structure Hurts: Lightweight Path Ranking for Dense KG-RAG</b><br>
 93.9% AUC · 13× fewer parameters than GNN baselines · Designed for dense, production-scale knowledge graphs
 </td>
@@ -36,25 +36,25 @@ Software Engineer focused on building <b>production-grade AI systems</b> — com
 
 ---
 
-## 🚀 Selected Systems & Public Projects
+## Selected Systems & Public Projects
 
 <table>
 <tr>
 <td width="30%"><b>Channel AI</b><br><sub>Conversational BI Platform</sub></td>
 <td width="70%">
 
-<b>Impact</b><br>
-• Reduced enterprise reporting cycles from days → minutes  
-• Deployed across 4 enterprise pilots + 12 SMB environments  
-• &lt;20s latency on multi-million-row analytical workloads  
+<b>Results</b><br>
+– Reduced enterprise reporting cycles from days to minutes  
+– Deployed across 4 enterprise pilots and 12 SMB environments  
+– Sub-20s latency on multi-million-row analytical workloads  
 
-<b>System Design</b><br>
-Multi-agent LangGraph architecture over Apache Iceberg  
+<b>System</b><br>
+Multi-agent LangGraph orchestration over Apache Iceberg  
 
 <b>Stack</b><br>
 LangGraph · OpenAI Agents SDK · Iceberg · RAG · LlamaIndex · Qdrant · WhatsApp API  
 
-🔗 https://github.com/pranavkumaarofficial/newdhatu-enterprise
+→ https://github.com/pranavkumaarofficial/newdhatu-enterprise
 
 </td>
 </tr>
@@ -63,18 +63,18 @@ LangGraph · OpenAI Agents SDK · Iceberg · RAG · LlamaIndex · Qdrant · What
 <td><b>NLCLI Wizard</b><br><sub>Local LLM Tooling</sub></td>
 <td>
 
-<b>Impact</b><br>
-• 83.3% accuracy translating natural language → shell commands  
-• Fully offline CPU inference (810 MB quantized model)  
-• ~1.5s latency, zero external APIs  
+<b>Results</b><br>
+– 83.3% accuracy translating natural language to shell commands  
+– Fully offline CPU inference (810 MB quantized model)  
+– ~1.5s latency with zero external dependencies  
 
-<b>Technical</b><br>
-Gemma 3 1B fine-tuned via QLoRA · GGUF Q4_K_M · llama.cpp  
+<b>System</b><br>
+Gemma 3 1B fine-tuned via QLoRA and quantized to GGUF  
 
 <b>Data</b><br>
 1,500 manually verified command mappings  
 
-🔗 https://github.com/pranavkumaarofficial/nlcli-wizard
+→ https://github.com/pranavkumaarofficial/nlcli-wizard
 
 </td>
 </tr>
@@ -82,7 +82,7 @@ Gemma 3 1B fine-tuned via QLoRA · GGUF Q4_K_M · llama.cpp
 
 ---
 
-## 🧠 Production Case Studies (No Public Repository)
+## Production Case Studies (No Public Repository)
 
 <table>
 <tr>
@@ -91,15 +91,15 @@ Gemma 3 1B fine-tuned via QLoRA · GGUF Q4_K_M · llama.cpp
 
 <sub>Implemented within a client-facing production environment; source code not publicly releasable.</sub>
 
-<b>Impact</b><br>
-• 94% precision on catalog-matching benchmarks  
-• &lt;15s query latency across multi-million SKU inventories  
-• Rolled out across 20+ vendor catalogs  
+<b>Results</b><br>
+– 94% precision on catalog-matching benchmarks  
+– Sub-15s query latency across multi-million SKU inventories  
+– Rolled out across 20+ vendor catalogs  
 
-<b>Design Insights</b><br>
-• Hybrid BM25 + dense embeddings outperform purely neural retrieval for noisy catalogs  
-• Explicit separation of categorical (exact-match) vs numerical (range-aware) attributes  
-• Vendor-specific schema reconciliation logic
+<b>Engineering Notes</b><br>
+– Hybrid BM25 + dense retrieval outperformed purely neural approaches on noisy catalogs  
+– Explicit separation of categorical (exact-match) and numerical (range-aware) attributes  
+– Vendor-specific schema reconciliation logic
 
 </td>
 </tr>
@@ -107,7 +107,7 @@ Gemma 3 1B fine-tuned via QLoRA · GGUF Q4_K_M · llama.cpp
 
 ---
 
-## 🧪 Systems in Progress
+## Systems in Progress
 
 <table>
 <tr>
@@ -122,7 +122,7 @@ Gemma 3 1B fine-tuned via QLoRA · GGUF Q4_K_M · llama.cpp
 
 ---
 
-## 🛠 Technical Focus Areas
+## Technical Focus Areas
 
 <table>
 <tr>
@@ -144,7 +144,7 @@ FastAPI · Python · TypeScript · OAuth2 · PKI · HL7 / FHIR interoperability
 
 <div align="center">
 
-### 📫 Connect
+### Connect
 
 [Portfolio](https://pranavkumaarofficial.github.io) ·
 [LinkedIn](https://linkedin.com/in/pranavkumaarofficial) ·
