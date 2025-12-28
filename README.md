@@ -4,7 +4,7 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-pranavkumaarofficial.github.io-blue?style=flat-square&logo=google-chrome&logoColor=white)](https://pranavkumaarofficial.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-pranavkumaarofficial-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/pranavkumaarofficial)
-[![Email](https://img.shields.io/badge/Email-pranavkumaar.in@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:pranavkumaar.in@gmail.com)
+[![Email](https://img.shields.io/badge/Email-pranavkumaarofficial@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:pranavkumaarofficial@gmail.com)
 <!-- [![ICMLC](https://img.shields.io/badge/ICMLC%202026-Paper%20Accepted-success?style=flat-square&logo=googlescholar&logoColor=white)](https://pranavkumaarofficial.github.io/projects/kg-rag-research) -->
 
 **Building production AI systems · Multi-agent LLM architectures · Local model deployment**
