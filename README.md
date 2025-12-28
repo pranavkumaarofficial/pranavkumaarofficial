@@ -3,7 +3,7 @@
 # Pranav Kumaar  
 **AI Engineer · Machine Learning Researcher · Production ML Systems**
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=800&color=00F7FF&center=true&vCenter=true&width=850&lines=Multi-Agent+LLM+Systems;Production+RAG+%26+Semantic+Search;Local+LLMs+%7C+Quantization+%7C+Inference+at+Scale" />
+Building **multi-agent LLM systems**, **retrieval-augmented generation**, and **efficient local inference** for real-world deployments.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Website-blue?style=flat-square&logo=google-chrome)](https://pranavkumaarofficial.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/in/pranavkumaarofficial)
@@ -15,109 +15,127 @@
 
 ## 🔬 Research & Publications
 
-**ICMLC 2026 (Accepted)**  
-**When Graph Structure Hurts: Lightweight Path Ranking for Dense KG-RAG**
-
-- **93.9% AUC** on dense knowledge-graph benchmarks  
-- **13× fewer parameters** than GNN-based baselines  
-- Designed for **production-scale retrieval**, not toy graphs  
-
-> Focus: efficient reasoning over dense KGs without structural overfitting
+<table>
+<tr>
+<td width="25%"><b>ICMLC 2026</b></td>
+<td width="75%">
+<b>When Graph Structure Hurts: Lightweight Path Ranking for Dense KG-RAG</b><br>
+93.9% AUC · 13× fewer parameters than GNN baselines · Designed for dense, production-scale KGs
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🚀 Selected Systems & Public Projects
 
-### **Channel AI** — Conversational BI via Multi-Agent Orchestration  
+<table>
+<tr>
+<td width="30%"><b>Channel AI</b><br><sub>Conversational BI</sub></td>
+<td width="70%">
+
+- Reduced reporting time **2 days → &lt;30 minutes**
+- **Deployed:** 4 enterprise pilots + 12 SMB instances  
+- **Latency:** &lt;20s on multi-million-row OLAP workloads  
+
+<b>Architecture</b>: Multi-agent LangGraph system over Apache Iceberg  
+<b>Stack</b>: LangGraph · OpenAI Agents SDK · Iceberg · RAG · LlamaIndex · Qdrant · WhatsApp API  
+
 🔗 https://github.com/pranavkumaarofficial/newdhatu-enterprise
 
-- Reduced enterprise reporting time **from 2 days → under 30 minutes**
-- **Deployed:** 4 enterprise pilots + 12 SMB installations  
-- **Latency:** <20s over multi-million-row OLAP datasets  
+</td>
+</tr>
 
-**Architecture**
-- LangGraph-based multi-agent system
-- Apache Iceberg analytical data layer
-- Specialized agents for intent parsing, semantic reasoning, and execution
+<tr>
+<td><b>NLCLI Wizard</b><br><sub>Local LLM Tooling</sub></td>
+<td>
 
-**Stack**
-`LangGraph` · `OpenAI Agents SDK` · `Apache Iceberg` · `RAG` · `LlamaIndex` · `Qdrant` · `WhatsApp API`
+- **83.3% accuracy** translating NL → CLI commands  
+- **Offline CPU inference** (810 MB quantized model)  
+- ~**1.5s latency**, zero API dependency  
 
----
+<b>Technical</b>: Gemma 3 1B fine-tuned with QLoRA · GGUF Q4_K_M · llama.cpp  
+<b>Data</b>: 1,500 manually verified command mappings  
 
-### **NLCLI Wizard** — Natural Language → CLI with Local LLMs  
 🔗 https://github.com/pranavkumaarofficial/nlcli-wizard
 
-- **83.3% accuracy** on NL → command translation  
-- **Runs fully offline** on CPU (810 MB quantized model)  
-- ~**1.5s inference**, zero API dependency  
-
-**Technical Highlights**
-- Fine-tuned **Gemma 3 1B** using QLoRA  
-- GGUF Q4_K_M quantization via llama.cpp  
-- Dataset of **1,500 verified command mappings** (all outputs validated)
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🧠 Production Case Studies (No Public Repository)
 
-### **OneSKU** — Hybrid Retrieval for Multi-Vendor Catalog Harmonization
+<table>
+<tr>
+<td width="30%"><b>OneSKU</b><br><sub>Hybrid Retrieval</sub></td>
+<td width="70%">
 
-> Implemented as part of a client-facing production system; source code is not publicly releasable.
+<sub>Implemented as part of a client-facing production system; source code not publicly releasable.</sub>
 
 - **94% precision** on production matching benchmarks  
-- <15s query latency across multi-million SKU inventories  
+- &lt;15s query latency across multi-million SKU inventories  
 - Deployed across **20+ vendor catalogs**
 
-**System Design Insights**
+<b>Key Insights</b>:
 - Hybrid **BM25 + dense embeddings** outperform purely neural retrieval for noisy catalogs  
-- Explicit separation of:
-  - **Categorical attributes** → exact-match constraints  
-  - **Numerical attributes** → range-aware similarity  
-- Custom reconciliation logic for vendor-specific schemas
+- Explicit separation of categorical (exact-match) vs numerical (range-aware) attributes  
+- Vendor-specific schema reconciliation logic
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🧪 Systems in Progress
 
-- **Efficient Agent Routing for Tool-Heavy LLM Workloads**  
-  *Cost-aware agent selection under latency constraints*
-
-- **Small Language Models for Domain-Specific Analytics**  
-  *Local inference, quantization, and structured reasoning*
-
-> Repositories and technical write-ups will be published as systems stabilize.
+<table>
+<tr>
+<td width="50%"><b>Efficient Agent Routing</b></td>
+<td width="50%">Cost-aware agent selection for tool-heavy LLM workloads under latency constraints</td>
+</tr>
+<tr>
+<td><b>Small Language Models for Analytics</b></td>
+<td>Local inference, quantization, and structured reasoning for domain-specific BI</td>
+</tr>
+</table>
 
 ---
 
 ## 🛠 Technical Focus Areas
 
-### AI / ML Systems
-- Multi-agent LLM architectures (LangGraph)
-- Retrieval-Augmented Generation (LlamaIndex, Qdrant, FAISS)
-- Fine-tuning & PEFT (QLoRA, Unsloth)
-- Model quantization & inference optimization
+<table>
+<tr>
+<td width="33%"><b>AI / ML Systems</b><br>
+Multi-agent orchestration · RAG · PEFT · Quantization · CV pipelines
+</td>
 
-### Data & Infrastructure
-- Apache Iceberg, PostgreSQL
-- Vector databases & OLAP optimization
-- Docker, Kubernetes
-- AWS, Azure, DigitalOcean
+<td width="33%"><b>Data & Infrastructure</b><br>
+Apache Iceberg · PostgreSQL · Vector DBs · Docker · Kubernetes · Cloud
+</td>
 
-### Production Engineering
-- FastAPI, Python, TypeScript
-- OAuth2, Keycloak, PKI
-- HL7 / FHIR healthcare interoperability
-- High-availability backend services
+<td width="33%"><b>Production Engineering</b><br>
+FastAPI · Python · TypeScript · OAuth2 · PKI · HL7 / FHIR
+</td>
+</tr>
+</table>
 
 ---
 
 ## 📊 GitHub Snapshot
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&theme=radical&hide_border=true" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavkumaarofficial&layout=compact&theme=radical&hide_border=true" height="150" />
-</p>
+<table>
+<tr>
+<td>
+<img src="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&hide_border=true" />
+</td>
+<td>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavkumaarofficial&layout=compact&hide_border=true" />
+</td>
+</tr>
+</table>
 
 ---
 
