@@ -143,14 +143,10 @@
 ## 📈 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&ring_color=58A6FF" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=pranavkumaarofficial&theme=react&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&theme=radical" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavkumaarofficial&layout=compact&theme=radical" height="150" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=pranavkumaarofficial&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&langs_count=8&hide=jupyter%20notebook,html,css" height="170" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=pranavkumaarofficial&theme=react-dark&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=C9D1D9" height="170" />
-</p>
 
 ---
 
