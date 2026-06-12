@@ -1,155 +1,57 @@
-<div align="center">
+# Pranav Kumaar
 
-# Pranav Kumaar  
-**Software Engineer · Machine Learning Research · Production ML Systems**
+Software engineer working on machine learning systems: multi-agent LLM orchestration, retrieval-augmented generation, and local quantized inference. Starting my MS in Computer Science at UMass Amherst, Fall 2026. Based in Bangalore, India.
 
-<table>
-<tr>
-<td align="center">Multi-Agent LLM Systems</td>
-<td align="center">Retrieval-Augmented Generation</td>
-<td align="center">Local & Cost-Aware Inference</td>
-<td align="center">Production ML Infrastructure</td>
-</tr>
-</table>
-
-I am a software engineer who builds **production-grade AI systems** — focusing on how models, data, and infrastructure behave under real-world constraints such as latency, cost, scale, and reliability.
-
-[Portfolio](https://pranavkumaarofficial.github.io) ·
-[LinkedIn](https://linkedin.com/in/pranavkumaarofficial) ·
-[Email](mailto:pranavkumaarofficial@gmail.com)
-
-</div>
+[Portfolio](https://pranavkumaarofficial.github.io) · [LinkedIn](https://linkedin.com/in/pranavkumaarofficial) · [Email](mailto:pranavkumaarofficial@gmail.com)
 
 ---
 
-## Research & Publications
+### Tools I've shipped
 
-<table>
-<tr>
-<td width="22%"><b>ICMLC 2026</b></td>
-<td width="78%">
-<b>When Graph Structure Hurts: Lightweight Path Ranking for Dense KG-RAG</b><br>
-93.9% AUC · 13× fewer parameters than GNN baselines · Designed for dense, production-scale knowledge graphs
-</td>
-</tr>
-</table>
+**[nlcli-wizard](https://github.com/pranavkumaarofficial/nlcli-wizard)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/nlcli-wizard?style=flat&color=555)
+Natural language to shell commands, fully offline. Gemma 3 1B fine-tuned with QLoRA on 1,500 hand-verified mappings, quantized to an 810 MB GGUF. 83% accuracy at ~1.5s on CPU. No API, no network.
 
----
+**[oauth-for-dummies](https://github.com/pranavkumaarofficial/oauth-for-dummies)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/oauth-for-dummies?style=flat&color=555)
+Add GitHub or Google OAuth login to a FastAPI app in one command. Nobody should write that boilerplate twice.
 
-## Selected Systems & Public Projects
+**[ping-claude](https://github.com/pranavkumaarofficial/ping-claude)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/ping-claude?style=flat&color=555)
+Your local Claude Code terminal, on your phone. Approve permissions and send commands over Tailscale. Nothing leaves your machine.
 
-<table>
-<tr>
-<td width="30%"><b>Channel AI</b><br><sub>Conversational BI Platform</sub></td>
-<td width="70%">
+**[venvy](https://github.com/pranavkumaarofficial/venvy)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/venvy?style=flat&color=555)
+Fast cross-platform Python virtual environment manager.
 
-<b>Results</b><br>
-– Reduced enterprise reporting cycles from days to minutes  
-– Deployed across 4 enterprise pilots and 12 SMB environments  
-– Sub-20s latency on multi-million-row analytical workloads  
-
-<b>System</b><br>
-Multi-agent LangGraph orchestration over Apache Iceberg  
-
-<b>Stack</b><br>
-LangGraph · OpenAI Agents SDK · Iceberg · RAG · LlamaIndex · Qdrant · WhatsApp API  
-
-→ https://github.com/pranavkumaarofficial/newdhatu-enterprise
-
-</td>
-</tr>
-
-<tr>
-<td><b>NLCLI Wizard</b><br><sub>Local LLM Tooling</sub></td>
-<td>
-
-<b>Results</b><br>
-– 83.3% accuracy translating natural language to shell commands  
-– Fully offline CPU inference (810 MB quantized model)  
-– ~1.5s latency with zero external dependencies  
-
-<b>System</b><br>
-Gemma 3 1B fine-tuned via QLoRA and quantized to GGUF  
-
-<b>Data</b><br>
-1,500 manually verified command mappings  
-
-→ https://github.com/pranavkumaarofficial/nlcli-wizard
-
-</td>
-</tr>
-</table>
+**[python-est](https://github.com/pranavkumaarofficial/python-est)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/python-est?style=flat&color=555)
+EST (RFC 7030) certificate enrollment server in Python. Multi-CA support, TLS 1.3, production-grade PKI.
 
 ---
 
-## Production Case Studies (No Public Repository)
+### Research
 
-<table>
-<tr>
-<td width="30%"><b>OneSKU</b><br><sub>Hybrid Retrieval System</sub></td>
-<td width="70%">
-
-<sub>Implemented within a client-facing production environment; source code not publicly releasable.</sub>
-
-<b>Results</b><br>
-– 94% precision on catalog-matching benchmarks  
-– Sub-15s query latency across multi-million SKU inventories  
-– Rolled out across 20+ vendor catalogs  
-
-<b>Engineering Notes</b><br>
-– Hybrid BM25 + dense retrieval outperformed purely neural approaches on noisy catalogs  
-– Explicit separation of categorical (exact-match) and numerical (range-aware) attributes  
-– Vendor-specific schema reconciliation logic
-
-</td>
-</tr>
-</table>
+**When Graph Structure Hurts: Lightweight Path Ranking for Dense KG-RAG**, accepted at **ICMLC 2026**.
+A plain MLP path scorer reaches 93.9% AUC on dense knowledge graphs, beating GCN and GAT baselines with 13x fewer parameters. Code goes public after the conference.
 
 ---
 
-## Systems in Progress
+### Bigger systems
 
-<table>
-<tr>
-<td width="50%"><b>Efficient Agent Routing</b></td>
-<td width="50%">Cost-aware agent selection for tool-heavy LLM workflows under strict latency budgets</td>
-</tr>
-<tr>
-<td><b>Small Language Models for Analytics</b></td>
-<td>Local inference, quantization, and structured reasoning for domain-specific business intelligence</td>
-</tr>
-</table>
+**[Channel AI](https://github.com/pranavkumaarofficial/newdhatu-enterprise)**: conversational business intelligence over Apache Iceberg with multi-agent LangGraph orchestration. Cut enterprise reporting from days to minutes across enterprise and SMB deployments. The linked repo holds the system design and architecture docs.
+
+**OneSKU**: hybrid BM25 plus dense retrieval across multi-million-SKU vendor catalogs, sub-15s queries. Client work, so no public code. Write-up on my [portfolio](https://pranavkumaarofficial.github.io).
 
 ---
 
-## Technical Focus Areas
+### Currently building
 
-<table>
-<tr>
-<td width="33%"><b>AI / ML Systems</b><br>
-Multi-agent orchestration · RAG · PEFT · Quantization · Model optimization
-</td>
-
-<td width="33%"><b>Data & Infrastructure</b><br>
-Apache Iceberg · PostgreSQL · Vector databases · Docker · Kubernetes · Cloud platforms
-</td>
-
-<td width="33%"><b>Production Engineering</b><br>
-FastAPI · Python · TypeScript · OAuth2 · PKI · HL7 / FHIR interoperability
-</td>
-</tr>
-</table>
+- Cost-aware agent routing for tool-heavy LLM workflows
+- Small language models for analytics: quantization, structured outputs, local inference
 
 ---
 
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&theme=github_dark&hide_border=true&hide_title=true&hide_rank=true">
+  <img src="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&theme=default&hide_border=true&hide_title=true&hide_rank=true" alt="GitHub stats for Pranav Kumaar">
+</picture>
 
-### 📫 Connect
+`Python` `TypeScript` `PyTorch` `LangGraph` `FastAPI` `Apache Iceberg` `Docker` `Kubernetes` `Qdrant` `PostgreSQL`
 
-[Portfolio](https://pranavkumaarofficial.github.io) ·
-[LinkedIn](https://linkedin.com/in/pranavkumaarofficial) ·
-[Email](mailto:pranavkumaarofficial@gmail.com)
-
-<sub>Software engineer interested in scalable AI systems, local LLM deployment, and production ML infrastructure</sub>
-
-</div>
+<sub>Pranav Kumaar (pranavkumaarofficial) is a software engineer focused on machine learning infrastructure, LLM agents, RAG systems, and on-device inference. MSCS at the University of Massachusetts Amherst, Fall 2026.</sub>
