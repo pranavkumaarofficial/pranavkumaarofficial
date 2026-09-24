@@ -1,57 +1,57 @@
 # Pranav Kumaar
 
-Software engineer working on machine learning systems: multi-agent LLM orchestration, retrieval-augmented generation, and local quantized inference. Starting my MS in Computer Science at UMass Amherst, Fall 2026. Based in Bangalore, India.
+Software engineer. I build developer tooling with a bias toward local execution: things that run on your machine, work offline, and tell you when they are not sure.
+
+MS Computer Science at UMass Amherst. Previously two years building software for medical devices. Amherst, MA.
 
 [Portfolio](https://pranavkumaarofficial.github.io) · [LinkedIn](https://linkedin.com/in/pranavkumaarofficial) · [Email](mailto:pranavkumaarofficial@gmail.com)
 
 ---
 
-### Tools I've shipped
+### Tools
 
-**[nlcli-wizard](https://github.com/pranavkumaarofficial/nlcli-wizard)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/nlcli-wizard?style=flat&color=555)
-Natural language to shell commands, fully offline. Gemma 3 1B fine-tuned with QLoRA on 1,500 hand-verified mappings, quantized to an 810 MB GGUF. 83% accuracy at ~1.5s on CPU. No API, no network.
+**[venvy](https://github.com/pranavkumaarofficial/venvy)** · [PyPI](https://pypi.org/project/venvy/)
+Audits every Python virtual environment on a machine for known-vulnerable and known-malicious packages, offline. Inventory reads `*.dist-info` as text and never imports the package it is scanning. Fails closed: a missing, corrupt, or empty advisory database refuses to scan rather than reporting a false all-clear. Semantic exit codes for CI. 229 tests on Windows, macOS, and Linux across Python 3.8 to 3.13. Every claim in the README has a command behind it in [docs/VERIFY.md](https://github.com/pranavkumaarofficial/venvy/blob/main/docs/VERIFY.md).
 
-**[oauth-for-dummies](https://github.com/pranavkumaarofficial/oauth-for-dummies)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/oauth-for-dummies?style=flat&color=555)
-Add GitHub or Google OAuth login to a FastAPI app in one command. Nobody should write that boilerplate twice.
+**[nlcli-wizard](https://github.com/pranavkumaarofficial/nlcli-wizard)**
+Natural language to Docker commands using a fine-tuned Gemma quantized to GGUF, running on CPU with no network. I published 94% accuracy, discovered it had been measured on training data, and retracted it. The corrected figure is 46.6% on 116 handwritten tests, with a contamination-checking eval harness so anyone can reproduce both the number and the mistake. The per-category breakdown shows where a small model actually fails.
 
-**[ping-claude](https://github.com/pranavkumaarofficial/ping-claude)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/ping-claude?style=flat&color=555)
-Your local Claude Code terminal, on your phone. Approve permissions and send commands over Tailscale. Nothing leaves your machine.
+**[oauth-for-dummies](https://github.com/pranavkumaarofficial/oauth-for-dummies)** · [PyPI](https://pypi.org/project/oauth-for-dummies/)
+Scaffolds working OAuth into a FastAPI project in one command, for six providers, with a debugger that shows the redirect and token exchange step by step. You own the generated code and there is no runtime dependency on the tool.
 
-**[venvy](https://github.com/pranavkumaarofficial/venvy)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/venvy?style=flat&color=555)
-Fast cross-platform Python virtual environment manager.
+**[ping-claude](https://github.com/pranavkumaarofficial/ping-claude)**
+Relays Claude Code permission prompts to a phone over Tailscale, so you can approve or deny from anywhere without a cloud service in the path. Runs entirely on your own machines.
 
-**[python-est](https://github.com/pranavkumaarofficial/python-est)** ![stars](https://img.shields.io/github/stars/pranavkumaarofficial/python-est?style=flat&color=555)
-EST (RFC 7030) certificate enrollment server in Python. Multi-CA support, TLS 1.3, production-grade PKI.
+**[python-est](https://github.com/pranavkumaarofficial/python-est)**
+EST (RFC 7030) certificate enrollment server in Python.
+
+---
+
+### Open source
+
+Two pull requests open against [PyJWT](https://github.com/jpadilla/pyjwt): [#1183](https://github.com/jpadilla/pyjwt/pull/1183) adds the received audience value to `InvalidAudienceError`, and [#1184](https://github.com/jpadilla/pyjwt/pull/1184) adds `to_dict()` and `to_json()` to `PyJWK` and `PyJWKSet`.
 
 ---
 
 ### Research
 
-**When Graph Structure Hurts: Lightweight Path Ranking for Dense KG-RAG**, accepted at **ICMLC 2026**.
-A plain MLP path scorer reaches 93.9% AUC on dense knowledge graphs, beating GCN and GAT baselines with 13x fewer parameters. Code goes public after the conference.
+**When Graph Structure Hurts: Lightweight Path Ranking for Dense KG-RAG**, accepted at ICMLC 2026.
+An MLP path scorer reaches 93.9% AUC on dense knowledge graphs, ahead of GCN and GAT baselines with roughly 13x fewer parameters. Code goes public after the conference.
 
 ---
 
-### Bigger systems
+### Systems
 
-**[Channel AI](https://github.com/pranavkumaarofficial/newdhatu-enterprise)**: conversational business intelligence over Apache Iceberg with multi-agent LangGraph orchestration. Cut enterprise reporting from days to minutes across enterprise and SMB deployments. The linked repo holds the system design and architecture docs.
-
-**OneSKU**: hybrid BM25 plus dense retrieval across multi-million-SKU vendor catalogs, sub-15s queries. Client work, so no public code. Write-up on my [portfolio](https://pranavkumaarofficial.github.io).
-
----
-
-### Currently building
-
-- Cost-aware agent routing for tool-heavy LLM workflows
-- Small language models for analytics: quantization, structured outputs, local inference
+**[Channel AI](https://github.com/pranavkumaarofficial/channel-ai-enterprise)**
+Conversational analytics over WhatsApp for non-technical users, across 12 pilot deployments. Five-stage pipeline where SQL generation is the last step, after a dialog agent resolves what the question actually means. Shut down as a venture. The repository is the architecture write-up, including the two failure classes that dominated production errors: temporal grain mismatch and categorical value linking. No code, and it says so.
 
 ---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&theme=github_dark&hide_border=true&hide_title=true&hide_rank=true">
-  <img src="https://github-readme-stats.vercel.app/api?username=pranavkumaarofficial&show_icons=true&theme=default&hide_border=true&hide_title=true&hide_rank=true" alt="GitHub stats for Pranav Kumaar">
-</picture>
+### Working on
 
-`Python` `TypeScript` `PyTorch` `LangGraph` `FastAPI` `Apache Iceberg` `Docker` `Kubernetes` `Qdrant` `PostgreSQL`
+- Making nlcli-wizard installable in one paste on a machine without a compiler
+- venvy: progress output on full-disk discovery, and closing the gap between the malicious-package feeds and known historical typosquats
 
-<sub>Pranav Kumaar (pranavkumaarofficial) is a software engineer focused on machine learning infrastructure, LLM agents, RAG systems, and on-device inference. MSCS at the University of Massachusetts Amherst, Fall 2026.</sub>
+---
+
+`Python` `PyTorch` `FastAPI` `SQLite` `llama.cpp` `LangGraph` `Apache Iceberg` `Docker` `PostgreSQL` `TypeScript`
